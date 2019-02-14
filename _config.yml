@@ -1,0 +1,41 @@
+# plugins
+plugins: [jekyll-paginate, jekyll-sitemap,jekyll-admin]
+# Site settings
+title: "- DC -"
+email: ethan9141@gmail.com
+description: "Hello."
+baseurl: ""
+url: "http://doublechuang.nctu.me/"
+title_description: ""
+title_image: "https://avatars3.githubusercontent.com/u/14947813?s=460&v=4"
+google_analytics: "UA-134433198-1"
+disqus_account: DcHome
+github_repository: https://github.com/DoubleChuang
+addthis_id: ra-5c63d28d01744695
+post_limit: 5
+
+# Social usernames/URLs
+twitter_username: 
+github_username:  DoubleChuang
+instagram_username: 
+reddit_username: 
+linkedin_link: 
+google_plus_link: 
+stackoverflow_link: 
+xing_link:
+facebook_link:
+
+# Footer
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/\">Double Chuang</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/DoubleChuang\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+exclude: [vendor]
+
