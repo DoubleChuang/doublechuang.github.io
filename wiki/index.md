@@ -49,6 +49,6 @@ Home Assistant (Raspberry Pi 3, Docker)
 | 路由器 | 小米 Mini (RT-AC54U) 刷老毛子 Padavan |
 | HA 版本 | 2025.11.3 (armv7 最終版, Docker) |
 | 整合 | hass-xiaomi-miot (v1.1.4) + Tuya 官方整合 |
-| 新風機 | MATE Air Fresh A1 (mate.airfresh.a1), 192.168.1.36 |
-| 插座 | 小米 WiFi 插座 (qmi.plug.tw02), 192.168.1.14 |
-| 網域 | dcnight.duckdns.org (duckdns 免費) |
+| 新風機 | MATE Air Fresh A1 (mate.airfresh.a1), <新風機-IP> |
+| 插座 | 小米 WiFi 插座 (qmi.plug.tw02), <插座-IP> |
+| 網域 | <你的網域>.duckdns.org (duckdns 免費) |
