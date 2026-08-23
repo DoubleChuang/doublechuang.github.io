@@ -1,0 +1,83 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* series navigation box */
+.series-nav {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0 1.5rem;
+  background: var(--card-bg);
+
+  .series-nav-header {
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 0.75rem;
+
+    i {
+      color: var(--sidebar-muted-color);
+    }
+  }
+
+  .series-nav-chapters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.8rem;
+    margin-bottom: 0.75rem;
+
+    a,
+    .series-nav-current {
+      font-size: 0.9rem;
+      padding: 0.1rem 0;
+    }
+
+    .series-nav-current {
+      font-weight: 600;
+      color: var(--heading-color);
+      border-bottom: 2px solid var(--main-color);
+    }
+
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
+
+  .series-nav-pager {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 0.6rem;
+    font-size: 0.9rem;
+
+    a {
+      color: var(--main-color);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .series-nav-disabled {
+      color: var(--text-muted-color);
+    }
+  }
+}

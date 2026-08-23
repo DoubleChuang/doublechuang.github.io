@@ -1,13 +1,18 @@
 ---
 title: "06 - HomeKit 與 Siri"
 date: 2026-08-21
-categories: [Wiki]
-tags: [Wiki, HomeKit, Siri]
+categories: [智能家居]
+tags: [HomeKit, Siri]
+description: "HomeKit Bridge 設定、Home Hub 限制與 Siri 捷徑方案"
+series_no: "06"
 ---
+
+{% include series-nav.html %}
 
 # HomeKit 與 Siri
 
 ## HomeKit Bridge
+
 
 HA 內建 HomeKit 整合,把設備曝露到 Apple 家庭 app:
 

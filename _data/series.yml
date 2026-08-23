@@ -1,0 +1,31 @@
+- num: "01"
+  title: "硬體環境"
+  url: "/posts/01-硬體環境/"
+
+- num: "02"
+  title: "Home Assistant 安裝"
+  url: "/posts/02-HA安裝/"
+
+- num: "03"
+  title: "米家整合"
+  url: "/posts/03-米家整合/"
+
+- num: "04"
+  title: "疑難排解"
+  url: "/posts/04-疑難排解/"
+
+- num: "05"
+  title: "塗鴉插座整合"
+  url: "/posts/05-塗鴉插座/"
+
+- num: "06"
+  title: "HomeKit 與 Siri"
+  url: "/posts/06-HomeKit與Siri/"
+
+- num: "07"
+  title: "遠端存取"
+  url: "/posts/07-遠端存取/"
+
+- num: "08"
+  title: "日常維護"
+  url: "/posts/08-日常維護/"

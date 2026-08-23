@@ -1,0 +1,37 @@
+{% assign series = site.data.series %}
+{% assign current_no = page.series_no %}
+{% assign idx = -1 %}
+{% for item in series %}
+  {% if item.num == current_no %}{% assign idx = forloop.index0 %}{% endif %}
+{% endfor %}
+{% if idx >= 0 %}
+<div class="series-nav">
+  <div class="series-nav-header"><i class="fas fa-book-open"></i> 智慧家庭整合系列</div>
+  <div class="series-nav-chapters">
+    {% for item in series %}
+      {% if item.num == current_no %}
+        <span class="series-nav-current">{{ item.num }} · {{ item.title }}</span>
+      {% else %}
+        <a href="{{ item.url | relative_url }}">{{ item.num }} · {{ item.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="series-nav-pager">
+    {% if idx > 0 %}
+      {% assign prev_idx = idx | minus: 1 %}
+      {% assign prev = series[prev_idx] %}
+      <a class="series-nav-prev" href="{{ prev.url | relative_url }}">&larr; {{ prev.num }} · {{ prev.title }}</a>
+    {% else %}
+      <span class="series-nav-disabled">&larr; 第一章</span>
+    {% endif %}
+    {% assign last_idx = series.size | minus: 1 %}
+    {% if idx < last_idx %}
+      {% assign next_idx = idx | plus: 1 %}
+      {% assign next = series[next_idx] %}
+      <a class="series-nav-next" href="{{ next.url | relative_url }}">{{ next.num }} · {{ next.title }} &rarr;</a>
+    {% else %}
+      <span class="series-nav-disabled">最後一章 &rarr;</span>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
